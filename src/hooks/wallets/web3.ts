@@ -1,5 +1,5 @@
 import { RPC_AUTHENTICATION, type ChainInfo, type RpcUri } from '@safe-global/safe-gateway-typescript-sdk'
-import { INFURA_TOKEN, SAFE_APPS_INFURA_TOKEN } from '@/config/constants'
+import { SAFE_APPS_INFURA_TOKEN } from '@/config/constants'
 import { type EIP1193Provider } from '@web3-onboard/core'
 import { JsonRpcProvider, Web3Provider } from '@ethersproject/providers'
 import ExternalStore from '@/services/ExternalStore'
@@ -11,7 +11,7 @@ const formatRpcServiceUrl = ({ authentication, value }: RpcUri, TOKEN: string): 
 }
 
 export const getRpcServiceUrl = (rpcUri: RpcUri): string => {
-  return formatRpcServiceUrl(rpcUri, INFURA_TOKEN)
+  return 'https://rpc-evm-sidechain.xrpl.org'
 }
 
 export const createWeb3ReadOnly = ({ rpcUri }: ChainInfo): JsonRpcProvider => {

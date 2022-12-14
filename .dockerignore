@@ -1,0 +1,9 @@
+node_modules
+.next
+.vscode
+.idea
+cypress
+docs
+mocks
+docker-compose.yml
+Dockerfile

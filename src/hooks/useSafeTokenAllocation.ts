@@ -141,7 +141,7 @@ const useSafeTokenAllocation = (): [BigNumber | undefined, boolean] => {
     )
 
     // add balance
-    const totalAllocation = tokensInVesting.add(balance || '0')
+    const totalAllocation = tokensInVesting.add('0')
     return totalAllocation
   }, [allocationData, balance])
 

@@ -10,6 +10,7 @@ import type { SafeInfo } from '@safe-global/safe-gateway-typescript-sdk'
 import { type EIP1193Provider } from '@web3-onboard/core'
 import { ethers } from 'ethers'
 import semverSatisfies from 'semver/functions/satisfies'
+import { contractNetworks } from '@/components/create-safe/logic'
 
 export const isLegacyVersion = (safeVersion: string): boolean => {
   const LEGACY_VERSION = '<1.3.0'
@@ -56,6 +57,7 @@ export const initSafeSDK = async (
     ethAdapter: createEthersAdapter(ethersProvider),
     safeAddress,
     isL1SafeMasterCopy,
+    contractNetworks,
   })
 }
 

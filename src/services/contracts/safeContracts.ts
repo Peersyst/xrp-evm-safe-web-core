@@ -36,7 +36,7 @@ export const _getValidatedGetContractProps = (
   const [noMetadataVersion] = safeVersion.split('+')
 
   return {
-    chainId: +chainId,
+    chainId: 1,
     safeVersion: noMetadataVersion as SafeVersion,
   }
 }
