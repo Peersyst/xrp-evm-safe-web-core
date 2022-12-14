@@ -6,6 +6,7 @@
   "version": "1.2.0",
   "private": true,
   "scripts": {
+    "prod": "next start",
     "dev": "next dev",
     "start": "next dev",
     "build": "next build",
