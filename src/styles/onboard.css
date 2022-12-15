@@ -60,11 +60,11 @@
   --onboard-wallet-button-box-shadow-hover: 0 0 2px #00fd00;
 
   /* Fonts */
-  --onboard-font-family-normal: DM Sans, sans-serif;
-  --onboard-font-family-semibold: DM Sans, sans-serif;
-  --onboard-font-family-light: DM Sans, sans-serif;
-  --account-select-modal-font-family-normal: DM Sans, sans-serif;
-  --account-select-modal-font-family-light: DM Sans, sans-serif;
+  --onboard-font-family-normal: work-sans, sans-serif;
+  --onboard-font-family-semibold: work-sans, sans-serif;
+  --onboard-font-family-light: work-sans, sans-serif;
+  --account-select-modal-font-family-normal: work-sans, sans-serif;
+  --account-select-modal-font-family-light: work-sans, sans-serif;
 
   --onboard-modal-border-radius: 8px;
   --onboard-border-radius-1: 8px;

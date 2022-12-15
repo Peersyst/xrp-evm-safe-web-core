@@ -5,8 +5,6 @@ import HomeIcon from '@/public/images/sidebar/home.svg'
 import TransactionIcon from '@/public/images/sidebar/transactions.svg'
 import AppsIcon from '@/public/images/sidebar/apps.svg'
 import SettingsIcon from '@/public/images/sidebar/settings.svg'
-import BeamerIcon from '@/public/images/sidebar/whats-new.svg'
-import HelpCenterIcon from '@/public/images/sidebar/help-center.svg'
 import { useRemoteSafeApps } from '@/hooks/safe-apps/useRemoteSafeApps'
 import { useCurrentChain } from '@/hooks/useChains'
 
@@ -55,12 +53,6 @@ const CreationDialog = () => {
             Icon={SettingsIcon}
             title="Settings"
             description="Want to change your Safe setup? Settings is the right place to go."
-          />
-          <HintItem Icon={BeamerIcon} title="What's new" description="Don't miss any future Safe updates." />
-          <HintItem
-            Icon={HelpCenterIcon}
-            title="Help center"
-            description="Have any questions? Check out our collection of articles."
           />
         </Grid>
         <Box display="flex" justifyContent="center">

@@ -4,7 +4,6 @@ import classnames from 'classnames'
 import Header from '@/components/common//Header'
 import css from './styles.module.css'
 import SafeLoadingError from '../SafeLoadingError'
-import Footer from '../Footer'
 import SideDrawer from './SideDrawer'
 
 const PageLayout = ({ children }: { children: ReactElement }): ReactElement => {
@@ -26,8 +25,11 @@ const PageLayout = ({ children }: { children: ReactElement }): ReactElement => {
         <div className={css.content}>
           <SafeLoadingError>{children}</SafeLoadingError>
         </div>
-
-        <Footer />
+        <img
+          src="/images/xrpl_waves.png"
+          alt="XRPL waves"
+          style={{ position: 'absolute', bottom: 0, right: 0, width: '500px', height: '500px' }}
+        />
       </div>
     </>
   )

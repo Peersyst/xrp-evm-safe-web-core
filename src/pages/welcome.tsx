@@ -6,7 +6,7 @@ const Welcome: NextPage = () => {
   return (
     <main>
       <Head>
-        <title>Safe – Welcome</title>
+        <title>Evm Sidechain Safe – Welcome</title>
       </Head>
 
       <NewSafe />
