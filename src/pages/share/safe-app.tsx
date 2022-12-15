@@ -31,7 +31,7 @@ const ShareSafeApp = () => {
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe Apps – Share</title>
+        <title>EVM Sidechain Safe Apps – Share</title>
       </Head>
 
       <main>

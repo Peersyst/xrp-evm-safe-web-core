@@ -9,7 +9,7 @@ const Modules: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe – Settings – Modules</title>
+        <title>EVM Sidechain Safe – Settings – Modules</title>
       </Head>
 
       <SettingsHeader />

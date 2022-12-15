@@ -187,7 +187,7 @@ const AppFrame = ({ appUrl, allowedFeaturesList }: AppFrameProps): ReactElement 
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe Apps - Viewer - {remoteApp ? remoteApp.name : UNKNOWN_APP_NAME}</title>
+        <title>EVM Sidechain Safe Apps - Viewer - {remoteApp ? remoteApp.name : UNKNOWN_APP_NAME}</title>
       </Head>
 
       <div className={css.wrapper}>

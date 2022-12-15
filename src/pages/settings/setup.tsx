@@ -19,7 +19,7 @@ const Setup: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe – Settings – Setup</title>
+        <title>EVM Sidechain Safe – Settings – Setup</title>
       </Head>
 
       <SettingsHeader />

@@ -7,7 +7,7 @@ const SpendingLimitsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe – Settings – Spending limit</title>
+        <title>EVM Sidechain Safe – Settings – Spending limit</title>
       </Head>
 
       <SettingsHeader />

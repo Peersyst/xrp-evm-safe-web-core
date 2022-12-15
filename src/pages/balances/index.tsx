@@ -22,7 +22,7 @@ const Balances: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe – Assets</title>
+        <title>EVM Sidechain Safe – Assets</title>
       </Head>
 
       <AssetsHeader currencySelect />

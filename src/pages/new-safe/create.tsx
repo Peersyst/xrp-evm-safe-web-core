@@ -7,7 +7,7 @@ const Open: NextPage = () => {
   return (
     <main>
       <Head>
-        <title>Evm Sidechain Safe – Create Safe</title>
+        <title>EVM Sidechain Safe – Create Safe</title>
       </Head>
 
       <CreateSafe />

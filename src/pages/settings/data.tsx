@@ -7,7 +7,7 @@ const Data: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe – Settings – Data</title>
+        <title>EVM Sidechain Safe – Settings – Data</title>
       </Head>
 
       <SettingsHeader />

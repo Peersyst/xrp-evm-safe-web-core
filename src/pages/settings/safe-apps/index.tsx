@@ -8,7 +8,7 @@ const SafeAppsPermissionsPage: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe – Settings – Safe Apps permissions</title>
+        <title>EVM Sidechain Safe – Settings – Safe Apps permissions</title>
       </Head>
 
       <SettingsHeader />

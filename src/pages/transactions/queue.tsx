@@ -13,7 +13,7 @@ const Queue: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe – Transaction queue</title>
+        <title>EVM Sidechain Safe – Transaction queue</title>
       </Head>
 
       <BatchExecuteHoverProvider>

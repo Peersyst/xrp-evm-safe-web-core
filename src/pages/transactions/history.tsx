@@ -26,7 +26,7 @@ const History: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Evm Sidechain Safe – Transaction history</title>
+        <title>EVM Sidechain Safe – Transaction history</title>
       </Head>
 
       <TxHeader
