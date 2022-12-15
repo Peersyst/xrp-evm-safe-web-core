@@ -72,7 +72,7 @@ const Apps: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Safe Apps</title>
+        <title>EVM Sidechain Safe Apps</title>
       </Head>
 
       <SafeAppList />

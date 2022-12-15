@@ -32,7 +32,6 @@ import useTxModal from '../SafeAppsTxModal/useTxModal'
 import SafeAppsSignMessageModal from '../SafeAppsSignMessageModal'
 import useSignMessageModal from '../SignMessageModal/useSignMessageModal'
 import TransactionQueueBar, { TRANSACTION_BAR_HEIGHT } from './TransactionQueueBar'
-import PermissionsPrompt from '../PermissionsPrompt'
 import { PermissionStatus } from '../types'
 
 import css from './styles.module.css'
@@ -188,7 +187,7 @@ const AppFrame = ({ appUrl, allowedFeaturesList }: AppFrameProps): ReactElement 
   return (
     <>
       <Head>
-        <title>Safe Apps - Viewer - {remoteApp ? remoteApp.name : UNKNOWN_APP_NAME}</title>
+        <title>EVM Sidechain Safe Apps - Viewer - {remoteApp ? remoteApp.name : UNKNOWN_APP_NAME}</title>
       </Head>
 
       <div className={css.wrapper}>
@@ -259,7 +258,7 @@ const AppFrame = ({ appUrl, allowedFeaturesList }: AppFrameProps): ReactElement 
           />
         )}
 
-        {permissionsRequest && (
+        {/*        {permissionsRequest && (
           <PermissionsPrompt
             isOpen
             origin={permissionsRequest.origin}
@@ -268,7 +267,7 @@ const AppFrame = ({ appUrl, allowedFeaturesList }: AppFrameProps): ReactElement 
             onReject={onRejectPermissionRequest}
             permissions={permissionsRequest.request}
           />
-        )}
+        )}*/}
       </div>
     </>
   )

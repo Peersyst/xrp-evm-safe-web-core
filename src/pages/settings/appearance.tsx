@@ -35,7 +35,7 @@ const Appearance: NextPage = () => {
   return (
     <>
       <Head>
-        <title>Safe – Settings – Appearance</title>
+        <title>EVM Sidechain Safe – Settings – Appearance</title>
       </Head>
 
       <SettingsHeader />
