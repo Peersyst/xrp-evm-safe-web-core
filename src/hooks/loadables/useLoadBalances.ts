@@ -6,6 +6,7 @@ import { Errors, logError } from '@/services/exceptions'
 import { selectCurrency } from '@/store/settingsSlice'
 import { selectSafeInfo } from '@/store/safeInfoSlice'
 import { ethers } from 'ethers'
+import BigNumber from 'bignumber.js'
 
 export const useLoadBalances = (): AsyncResult<SafeBalanceResponse> => {
   // use the selector directly because useSafeInfo is memoized
@@ -23,12 +24,17 @@ export const useLoadBalances = (): AsyncResult<SafeBalanceResponse> => {
       return balances.items.reduce(
         (res, { balance, tokenInfo }) => {
           const fiatConversion = (data?.market_data?.current_price['usd'] as number).toString()
-          const fiatBalanceBN = Number(ethers.utils.formatUnits(balance)) * Number(fiatConversion)
+          const fiatBalanceBN = new BigNumber(balance).multipliedBy(fiatConversion)
           return {
-            fiatTotal: (Number(res.fiatTotal) + Number(fiatBalanceBN)).toString(),
+            fiatTotal: ethers.utils.formatUnits(new BigNumber(res.fiatTotal).plus(fiatBalanceBN).toString()),
             items: [
               ...res.items,
-              { balance, fiatConversion: fiatConversion, fiatBalance: fiatBalanceBN.toString(), tokenInfo },
+              {
+                balance,
+                fiatConversion: fiatConversion,
+                fiatBalance: ethers.utils.formatUnits(fiatBalanceBN.toString()),
+                tokenInfo,
+              },
             ],
           }
         },
