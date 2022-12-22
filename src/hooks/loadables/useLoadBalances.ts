@@ -5,7 +5,7 @@ import useAsync, { type AsyncResult } from '../useAsync'
 import { Errors, logError } from '@/services/exceptions'
 import { selectCurrency } from '@/store/settingsSlice'
 import { selectSafeInfo } from '@/store/safeInfoSlice'
-import { BigNumber, ethers } from 'ethers'
+import { ethers } from 'ethers'
 
 export const useLoadBalances = (): AsyncResult<SafeBalanceResponse> => {
   // use the selector directly because useSafeInfo is memoized
