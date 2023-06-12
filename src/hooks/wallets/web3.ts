@@ -11,7 +11,7 @@ const formatRpcServiceUrl = ({ authentication, value }: RpcUri, TOKEN: string): 
 }
 
 export const getRpcServiceUrl = (rpcUri: RpcUri): string => {
-  return 'https://rpc-evm-sidechain.xrpl.org'
+  return 'https://rpc-evm-poa-sidechain.peersyst.tech'
 }
 
 export const createWeb3ReadOnly = ({ rpcUri }: ChainInfo): JsonRpcProvider => {
